@@ -1,0 +1,50 @@
+$grayDark: #040404;
+$grayLight: #131313;
+$grayLight2: #282828;
+$grayText: #b3b3b3;
+$grayNav: #090909;
+
+.App {
+  height: 100vh;
+  background: $grayLight;
+  display: flex;
+}
+
+.navBar {
+  padding: 10px;
+  width: 220px;
+  height: 100%;
+  background: $grayDark;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      color: $grayText; 
+      list-style-type: none;
+      border-radius: 5px;
+      padding: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &.active{
+        background: $grayLight2;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.main {
+  width: 100%;
+}
+
+.upperNav {
+  background: $grayNav;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 1rem;
+}
