@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import NavBar from './Components/NavBar';
 import Main from './Components/Main';
 
-function App() {
+const App = () => {
+  const [ mainDisplayStep, setMainDisplayStep ] = useState(1);
   return (
     <div className="App"> 
-      <NavBar />
-      <Main />
+      <NavBar setMainDisplayStep={setMainDisplayStep} />
+      <Main mainDisplayStep={mainDisplayStep} />
     </div>
   );
 }
