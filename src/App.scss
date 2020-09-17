@@ -60,8 +60,14 @@ $grayNav: #090909;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   padding: 0.5rem 1rem;
+}
+
+.walletButtonContainer {
+  display: flex;
+  align-items: flex-end;
 }
 
 .cardsWrap {

@@ -9,36 +9,17 @@ export default function Main(props) {
   switch (mainDisplayStep) {
     case 1:
       return(
-        <div className='main'>
-          <div className='upperNav'>
-            Web3 Dashboard
-          </div>
-          <ERC20Display />
-        </div>
+        <ERC20Display />
       )
     case 2:
       return(
-        <div className='main'>
-        <div className='upperNav'>
-          Web3 Dashboard
-        </div>
-          <ERC721Display />
-        </div>
+        <ERC721Display />
       )
     case 3:
       return(
-        <div className='main'>
-          <div className='upperNav'>
-            Web3 Dashboard
-          </div>
-          <DappDisplay />
-        </div>
+        <DappDisplay />
       )
     default:
       break;
   }
-
-  return (
-    <div></div>
-  )
 }
